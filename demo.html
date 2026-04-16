@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Murtaza - Email Signature Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        .demo-container {
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .demo-header {
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .demo-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .demo-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .signature-preview {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            margin-bottom: 40px;
+            display: inline-block;
+        }
+        
+        .demo-actions {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .demo-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .demo-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        .demo-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 40px;
+            color: white;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .demo-info h3 {
+            margin-top: 0;
+            font-weight: 400;
+        }
+        
+        .demo-info ul {
+            text-align: left;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .demo-info li {
+            margin-bottom: 8px;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .demo-header h1 {
+                font-size: 2rem;
+            }
+            
+            .signature-preview {
+                padding: 20px;
+            }
+            
+            .demo-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .demo-button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="demo-header">
+            <h1>Email Signature Demo</h1>
+            <p>Professional email signature designed for Ahmed Murtaza @ Epicmetry</p>
+        </div>
+        
+        <div class="signature-preview">
+            <!-- Email Signature -->
+            <div class="email-signature">
+                <div class="signature-backdrop">
+                    <img src="https://www.figma.com/api/mcp/asset/d829369e-9ace-4e6f-8eae-91c5c0f7900f" alt="Signature Backdrop" class="backdrop-image">
+                </div>
+                
+                <div class="main-container">
+                    <div class="header">
+                        <div class="logo">
+                            <img src="assets/em-logo.svg" alt="Logo" class="logo-image">
+                        </div>
+                        
+                        <div class="name-title">
+                            <h1 class="name">Ahmed Murtaza</h1>
+                            <p class="title">Design @ Epicmetry</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-section">
+                        <div class="info-badge">
+                            <img src="https://www.figma.com/api/mcp/asset/44685fb2-1326-4a50-8ec6-1678ba60b9e6" alt="Mobile" class="icon">
+                            <span>+971 50 515 2813</span>
+                        </div>
+                        
+                        <div class="info-badge">
+                            <img src="https://www.figma.com/api/mcp/asset/ce347a0b-e0f0-47c8-9b57-e6cd8b7f3a67" alt="Phone" class="icon">
+                            <span>+971 4 876 9396</span>
+                        </div>
+                        
+                        <div class="info-badge">
+                            <img src="https://www.figma.com/api/mcp/asset/116be92a-45fe-421d-882b-4dc3c47695b6" alt="Email" class="icon">
+                            <span>a.murtaza@epicmetry.com</span>
+                        </div>
+                        
+                        <div class="info-badge">
+                            <img src="https://www.figma.com/api/mcp/asset/69174161-5ac4-4f58-9492-939e26b95f59" alt="Website" class="icon">
+                            <span>www.epicmetry.com</span>
+                        </div>
+                        
+                        <div class="info-badge wide">
+                            <img src="https://www.figma.com/api/mcp/asset/bd6ca3c4-ab5e-4eba-9398-e3efc9425e2c" alt="Address" class="icon">
+                            <span>9W, 9WC, Dubai Airport Freezone, Dubai, UAE</span>
+                        </div>
+                    </div>
+                    
+                    <div class="divider">
+                        <img src="https://www.figma.com/api/mcp/asset/635799e7-2e31-4df6-abeb-d168df8d6398" alt="Divider" class="divider-image">
+                    </div>
+                    
+                    <div class="footer">
+                        <div class="info-text">
+                            <img src="https://www.figma.com/api/mcp/asset/3da0b90e-ff85-4180-b511-50ae71969c02" alt="Info Text" class="info-text-image">
+                        </div>
+                        
+                        <div class="social-section">
+                            <p class="follow-text">Follow us:</p>
+                            <div class="social-media">
+                                <img src="https://www.figma.com/api/mcp/asset/a3fcbb98-6df0-4a70-a76f-2c9cd46ab64f" alt="Facebook" class="social-icon">
+                                <img src="https://www.figma.com/api/mcp/asset/4a3175ee-6a8c-4a66-9740-5bf8f3da045c" alt="Instagram" class="social-icon">
+                                <img src="https://www.figma.com/api/mcp/asset/f8f121ca-24e4-49b8-a3f5-34be9fee119c" alt="X" class="social-icon">
+                                <img src="https://www.figma.com/api/mcp/asset/1534fc2d-035a-41c7-8321-dfbd0a9cfa4b" alt="LinkedIn" class="social-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-actions">
+            <a href="index.html" class="demo-button">📄 View Raw Signature</a>
+            <a href="style.css" class="demo-button">🎨 View CSS</a>
+            <a href="#" onclick="copySignature()" class="demo-button">📋 Copy HTML</a>
+        </div>
+        
+        <div class="demo-info">
+            <h3>📧 Email Client Compatibility</h3>
+            <ul>
+                <li>✅ Gmail & Google Workspace</li>
+                <li>✅ Outlook (Desktop & Web)</li>
+                <li>✅ Apple Mail & iOS Mail</li>
+                <li>✅ Thunderbird</li>
+                <li>✅ Mobile Email Apps</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function copySignature() {
+            const signatureHTML = document.querySelector('.email-signature').innerHTML;
+            navigator.clipboard.writeText(signatureHTML).then(() => {
+                alert('Email signature HTML copied to clipboard! 🎉');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Failed to copy signature. Please copy manually.');
+            });
+        }
+    </script>
+</body>
+</html>
