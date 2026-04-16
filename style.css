@@ -213,7 +213,7 @@ body {
 .info-text {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 8px;
     width: 144.526px;
     height: 76.246px;
 }
