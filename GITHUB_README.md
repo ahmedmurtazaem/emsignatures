@@ -67,8 +67,8 @@ Update contact information:
 ```html
 <span>+971 50 515 2813</span>
 <span>+971 4 876 9396</span>
-<span>a.murtaza@epicmetry.com</span>
-<span>www.epicmetry.com</span>
+<a href="mailto:a.murtaza@epicmetry.com" style="color: white; text-decoration: none;">a.murtaza@epicmetry.com</a>
+<a href="https://www.epicmetry.com" target="_blank" style="color: white; text-decoration: none;">www.epicmetry.com</a>
 <span>9W, 9WC, Dubai Airport Freezone, Dubai, UAE</span>
 ```
 
