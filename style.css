@@ -213,7 +213,7 @@ body {
 .info-text {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 8px;
     width: 144.526px;
     height: 76.246px;
 }
@@ -221,7 +221,7 @@ body {
 .social-section {
     position: absolute;
     left: 282.21px;
-    top: 41px;
+    top: 44px;
     width: 96px;
     height: 35px;
 }
